@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "flightNumber": "AA123",
+        "airline": "American Airlines",
+        "source": "JFK",
+        "destination": "LAX",
+        "price": 350.00,
+        "departureDate": "2024-09-15T10:00:00",
+        "returnDate": "2024-09-20T14:00:00"
+    },
+    {
+        "id": "2",
+        "flightNumber": "DL456",
+        "airline": "Delta Airlines",
+        "source": "ORD",
+        "destination": "MIA",
+        "price": 250.00,
+        "departureDate": "2024-09-16T08:30:00",
+        "returnDate": "2024-09-22T16:45:00"
+    },
+    {
+        "id": "3",
+        "flightNumber": "UA789",
+        "airline": "United Airlines",
+        "source": "SFO",
+        "destination": "SEA",
+        "price": 200.00,
+        "departureDate": "2024-09-17T09:15:00",
+        "returnDate": "2024-09-23T11:30:00"
+    },
+    {
+        "id": "4",
+        "flightNumber": "SW101",
+        "airline": "Southwest Airlines",
+        "source": "DAL",
+        "destination": "HOU",
+        "price": 150.00,
+        "departureDate": "2024-09-18T07:00:00",
+        "returnDate": "2024-09-25T18:00:00"
+    },
+    {
+        "id": "5",
+        "flightNumber": "BA202",
+        "airline": "British Airways",
+        "source": "LHR",
+        "destination": "JFK",
+        "price": 600.00,
+        "departureDate": "2024-09-19T13:00:00",
+        "returnDate": "2024-09-26T16:00:00"
+    },
+    {
+        "id": "6",
+        "flightNumber": "AF303",
+        "airline": "Air France",
+        "source": "CDG",
+        "destination": "LAX",
+        "price": 700.00,
+        "departureDate": "2024-09-20T14:00:00",
+        "returnDate": "2024-09-30T20:00:00"
+    },
+    {
+        "id": "7",
+        "flightNumber": "JL404",
+        "airline": "Japan Airlines",
+        "source": "NRT",
+        "destination": "ORD",
+        "price": 800.00,
+        "departureDate": "2024-09-21T15:00:00",
+        "returnDate": "2024-10-01T21:00:00"
+    },
+    {
+        "id": "8",
+        "flightNumber": "LH505",
+        "airline": "Lufthansa",
+        "source": "FRA",
+        "destination": "JFK",
+        "price": 550.00,
+        "departureDate": "2024-09-22T12:00:00",
+        "returnDate": "2024-09-29T17:00:00"
+    },
+    {
+        "id": "9",
+        "flightNumber": "QF606",
+        "airline": "Qantas",
+        "source": "SYD",
+        "destination": "LAX",
+        "price": 900.00,
+        "departureDate": "2024-09-23T16:00:00",
+        "returnDate": "2024-09-30T22:00:00"
+    },
+    {
+        "id": "10",
+        "flightNumber": "EK707",
+        "airline": "Emirates",
+        "source": "DXB",
+        "destination": "JFK",
+        "price": 750.00,
+        "departureDate": "2024-09-24T18:00:00",
+        "returnDate": "2024-10-05T23:00:00"
+    }
+]

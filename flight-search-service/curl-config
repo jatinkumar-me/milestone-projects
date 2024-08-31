@@ -1,0 +1,5 @@
+expand-url http://localhost:8080{{endpoint}}
+
+header="Content-Type: application/json"
+
+silent
