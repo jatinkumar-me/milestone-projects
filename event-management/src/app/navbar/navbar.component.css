@@ -1,0 +1,23 @@
+h1 {
+  display: inline;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

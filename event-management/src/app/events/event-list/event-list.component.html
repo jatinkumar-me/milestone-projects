@@ -1,0 +1,7 @@
+<div *ngFor="let event of events">
+  <app-event-details
+    [event]="event"
+    [userIdToInvide]="userIdToInvite"
+    (invite)="inviteUser(event.id)">
+  </app-event-details>
+</div>

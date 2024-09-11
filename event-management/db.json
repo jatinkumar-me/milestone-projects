@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user",
+      "password": "password"
+    },
+    {
+      "id": "2",
+      "username": "admin",
+      "password": "admin123"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "name": "Angular Workshop",
+      "date": "2024-09-20",
+      "location": "Online",
+      "description": "Learn the basics of Angular.",
+      "guests": [
+        "user",
+        "admin"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "React Conference",
+      "date": "2024-10-10",
+      "location": "New York",
+      "description": "Annual React conference with industry experts.",
+      "guests": [
+        "user"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Vue.js Meetup",
+      "date": "2024-11-05",
+      "location": "San Francisco",
+      "description": "Meet the Vue.js community and discuss latest updates.",
+      "guests": [
+        "admin"
+      ]
+    },
+    {
+      "id": "023a",
+      "name": "random event",
+      "description": "This is going to be the best event",
+      "date": "2024-09-11",
+      "location": "Kanpur"
+    }
+  ]
+}

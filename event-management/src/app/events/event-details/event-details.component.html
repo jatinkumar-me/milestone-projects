@@ -1,0 +1,19 @@
+<div class="event">
+  <h2>{{ event.name }}</h2>
+  <p>{{ event.description }}</p>
+  <p><strong>Date:</strong> {{ event.date }}</p>
+  <p><strong>Location:</strong> {{ event.location }}</p>
+
+  <div>
+    <strong>Invited Users (IDs):</strong>
+    <span *ngFor="let userId of event.guests">
+      {{ userId }}&nbsp;
+    </span>
+  </div>
+
+  <div>
+    <input type="number" [(ngModel)]="userIdToInvide" placeholder="Enter User ID" />
+    <button (click)="inviteUser()">Invite User</button>
+  </div>
+  <hr />
+</div>

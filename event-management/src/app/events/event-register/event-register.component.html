@@ -1,0 +1,35 @@
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Event Name:</label>
+    <input id="name" formControlName="name" type="text" />
+    <div *ngIf="eventForm.get('name')?.invalid && eventForm.get('name')?.touched">
+      <small *ngIf="eventForm.get('name')?.errors?.['required']">Name is required.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" formControlName="description"></textarea>
+    <div *ngIf="eventForm.get('description')?.invalid && eventForm.get('description')?.touched">
+      <small *ngIf="eventForm.get('description')?.errors?.['required']">Description is required.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="date">Date:</label>
+    <input id="date" formControlName="date" type="date" />
+    <div *ngIf="eventForm.get('date')?.invalid && eventForm.get('date')?.touched">
+      <small *ngIf="eventForm.get('date')?.errors?.['required']">Date is required.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="location">Location:</label>
+    <input id="location" formControlName="location" type="text" />
+    <div *ngIf="eventForm.get('location')?.invalid && eventForm.get('location')?.touched">
+      <small *ngIf="eventForm.get('location')?.errors?.['required']">Location is required.</small>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="eventForm.invalid">Create Event</button>
+</form>
