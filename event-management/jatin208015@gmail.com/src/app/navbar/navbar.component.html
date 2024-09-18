@@ -1,0 +1,13 @@
+<nav>
+  <h1>Event Management System |</h1>
+  <ul>
+    <li><a routerLink="/events">Events</a></li>
+    <li><a routerLink="/register">Register Event</a></li>
+    <li *ngIf="isLoggedIn; else loginLink">
+      <a href="#" (click)="logout()">Welcome, {{ username }} (logout)</a>
+    </li>
+    <ng-template #loginLink>
+      <a routerLink="/login">Login</a>
+    </ng-template>
+  </ul>
+</nav>

@@ -16,7 +16,6 @@ export class EventsService {
   }
 
   createEvent(event: Event): Observable<Event> {
-    event.guests = [];
     return this.http.post<any>(this.apiUrl, event);
   }
 

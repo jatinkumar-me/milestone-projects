@@ -19,8 +19,8 @@
       "location": "Online",
       "description": "Learn the basics of Angular.",
       "guests": [
-        2,
-        1
+        "user",
+        "admin"
       ]
     },
     {
@@ -30,7 +30,7 @@
       "location": "New York",
       "description": "Annual React conference with industry experts.",
       "guests": [
-        1
+        "user"
       ]
     },
     {
@@ -40,9 +40,15 @@
       "location": "San Francisco",
       "description": "Meet the Vue.js community and discuss latest updates.",
       "guests": [
-        2,
-        1
+        "admin"
       ]
+    },
+    {
+      "id": "023a",
+      "name": "random event",
+      "description": "This is going to be the best event",
+      "date": "2024-09-11",
+      "location": "Kanpur"
     }
   ]
 }
