@@ -1,0 +1,41 @@
+###
+
+@url=http://localhost:8090
+
+POST {{url}}/reservations
+
+{
+    "userId": 1,
+    "roomType": "Deluxe",
+    "checkInDate": "2024-09-20",
+    "checkOutDate": "2024-09-25"
+}
+
+###
+
+POST {{url}}/rooms/batch
+
+[
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-09-01", "availableTo": "2024-09-30" },
+    { "roomType": "Deluxe", "isAvailable": false, "availableFrom": "2024-09-01", "availableTo": "2024-09-30" },
+    { "roomType": "Standard", "isAvailable": true, "availableFrom": "2024-09-01", "availableTo": "2024-09-30" },
+    { "roomType": "Standard", "isAvailable": true, "availableFrom": "2024-09-01", "availableTo": "2024-09-30" },
+    { "roomType": "Suite", "isAvailable": true, "availableFrom": "2024-09-01", "availableTo": "2024-09-30" },
+    { "roomType": "Suite", "isAvailable": true, "availableFrom": "2024-09-01", "availableTo": "2024-09-30" },
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-10-01", "availableTo": "2024-10-31" },
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-10-01", "availableTo": "2024-10-31" },
+    { "roomType": "Standard", "isAvailable": true, "availableFrom": "2024-10-01", "availableTo": "2024-10-31" },
+    { "roomType": "Standard", "isAvailable": false, "availableFrom": "2024-10-01", "availableTo": "2024-10-31" },
+    { "roomType": "Suite", "isAvailable": true, "availableFrom": "2024-10-01", "availableTo": "2024-10-31" },
+    { "roomType": "Suite", "isAvailable": true, "availableFrom": "2024-10-01", "availableTo": "2024-10-31" },
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-11-01", "availableTo": "2024-11-30" },
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-11-01", "availableTo": "2024-11-30" },
+    { "roomType": "Standard", "isAvailable": true, "availableFrom": "2024-11-01", "availableTo": "2024-11-30" },
+    { "roomType": "Standard", "isAvailable": true, "availableFrom": "2024-11-01", "availableTo": "2024-11-30" },
+    { "roomType": "Suite", "isAvailable": true, "availableFrom": "2024-11-01", "availableTo": "2024-11-30" },
+    { "roomType": "Suite", "isAvailable": true, "availableFrom": "2024-11-01", "availableTo": "2024-11-30" },
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-12-01", "availableTo": "2024-12-31" },
+    { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-12-01", "availableTo": "2024-12-31" }
+]
+
+

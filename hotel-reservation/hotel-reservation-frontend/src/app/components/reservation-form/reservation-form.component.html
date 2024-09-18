@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Book a Room</h2>
+  <mat-card>
+    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Room Type</mat-label>
+        <mat-select formControlName="roomType">
+          <mat-option value="Deluxe">Deluxe</mat-option>
+          <mat-option value="Standard">Standard</mat-option>
+          <mat-option value="Suite">Suite</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Check-In Date</mat-label>
+        <input matInput [matDatepicker]="picker1" formControlName="checkInDate">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Check-Out Date</mat-label>
+        <input matInput [matDatepicker]="picker2" formControlName="checkOutDate">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!bookingForm.valid">
+        Book Room
+      </button>
+    </form>
+  </mat-card>
+</div>
+

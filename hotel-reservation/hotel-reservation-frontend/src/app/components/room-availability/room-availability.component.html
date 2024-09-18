@@ -1,0 +1,41 @@
+<div class="container">
+  <h2>Check Room Availability</h2>
+  <mat-card>
+    <form [formGroup]="availabilityForm" (ngSubmit)="onSearch()">
+      <mat-form-field appearance="fill">
+        <mat-label>Room Type</mat-label>
+        <mat-select formControlName="roomType">
+          <mat-option value="Deluxe">Deluxe</mat-option>
+          <mat-option value="Standard">Standard</mat-option>
+          <mat-option value="Suite">Suite</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Start Date</mat-label>
+        <input matInput [matDatepicker]="picker1" formControlName="startDate">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>End Date</mat-label>
+        <input matInput [matDatepicker]="picker2" formControlName="endDate">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="!availabilityForm.valid">
+        Check Availability
+      </button>
+    </form>
+  </mat-card>
+
+  <div *ngIf="availableRooms.length > 0">
+    <h3>Available Rooms</h3>
+    <mat-list>
+      <mat-list-item *ngFor="let room of availableRooms">{{ room.roomType }}</mat-list-item>
+    </mat-list>
+  </div>
+  <p *ngIf="availableRooms.length === 0">No rooms available.</p>
+</div>
