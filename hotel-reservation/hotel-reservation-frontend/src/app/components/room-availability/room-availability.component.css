@@ -1,0 +1,9 @@
+.room-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.room-card {
+  width: 300px;
+}

@@ -1,17 +1,17 @@
 <div class="container">
   <h2>Your Reservations</h2>
-  <mat-card *ngFor="let reservation of reservations" class="mb-16">
-    <mat-card-content>
-      <p><strong>Room Type:</strong> {{ reservation.roomType }}</p>
-      <p><strong>Check-In:</strong> {{ reservation.checkInDate }}</p>
-      <p><strong>Check-Out:</strong> {{ reservation.checkOutDate }}</p>
-      <p><strong>Status:</strong> {{ reservation.status }}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button color="primary" (click)="onView(reservation.id)">View Details</button>
-      <button mat-button color="accent" (click)="onUpdate(reservation.id)">Update</button>
-      <button mat-button color="warn" (click)="onCancel(reservation.id)">Cancel</button>
-    </mat-card-actions>
-  </mat-card>
+  <div class="matcard">
+    <mat-card *ngFor="let reservation of reservations" class="mb-16">
+      <mat-card-content>
+        <p><strong>Room Type:</strong> {{ reservation.roomType }}</p>
+        <p><strong>Check-In:</strong> {{ reservation.checkInDate }}</p>
+        <p><strong>Check-Out:</strong> {{ reservation.checkOutDate }}</p>
+        <p><strong>Status:</strong> {{ reservation.status }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="warn" (click)="onCancel(reservation.id)" [disabled]="reservation.status === 'CANCELLED'">Cancel</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
   <p *ngIf="reservations.length === 0">No reservations found.</p>
 </div>
