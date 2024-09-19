@@ -2,6 +2,7 @@
 
 @url=http://localhost:8090
 
+### Endpoint for posting reservations
 POST {{url}}/reservations
 
 {
@@ -11,8 +12,7 @@ POST {{url}}/reservations
     "checkOutDate": "2024-09-25"
 }
 
-###
-
+### Endpoint for bulk addition rooms.
 POST {{url}}/rooms/batch
 
 [
@@ -38,4 +38,10 @@ POST {{url}}/rooms/batch
     { "roomType": "Deluxe", "isAvailable": true, "availableFrom": "2024-12-01", "availableTo": "2024-12-31" }
 ]
 
+### Get all reservations for a user with id
+@userId=1
+GET {{url}}/reservations/users/{{userId}}
 
+
+### Check availability
+GET {{url}}/rooms/availability?startDate=2024-09-10&endDate=2024-09-27&roomType=Deluxe
